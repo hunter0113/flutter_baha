@@ -30,8 +30,17 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-    const List<String> imagelist=[
-      'assets/0.jpg','assets/1.jpg','assets/2.jpg','assets/3.jpg','assets/4.jpg','assets/5.jpg'
+    const List<String> CatImageList=[
+      'assets/1.png','assets/2.png','assets/3.png','assets/4.png','assets/5.png','assets/6.png'
+    ];
+    const List<String> CatNameList=[
+      '挪威森林貓','孟買貓','波斯貓','緬甸貓','英國短毛貓','蘇格蘭摺耳貓'
+    ];
+    const List<String> PopularCatImageList=[
+      'assets/a.jpg','assets/b.jpg','assets/c.jpg','assets/d.jpg','assets/e.jpg','assets/1.png'
+    ];
+    const List<String> PopularCatNameList=[
+      '布偶貓','孟加拉貓','喜馬拉雅貓','新加坡貓','達羅貓','挪威森林貓'
     ];
 
     return DefaultTabController(
@@ -81,21 +90,21 @@ class _MyHomePageState extends State<MyHomePage> {
                             decoration: new BoxDecoration(
                               image: new DecorationImage(
                                 fit: BoxFit.fill,
-                                image: AssetImage(imagelist[idx])
+                                image: AssetImage(CatImageList[idx])
                               ),
                             ),
                           ),
                           ListTile(
                             title: Text(
-                              "魔物獵人",
+                              CatNameList[idx],
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.black,
                               ),
                             ),
-                            subtitle: Text(" 心得:還敢下來阿冰鳥?!",
+                            subtitle: Text(" ${CatNameList[idx]}真可愛!!",
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 14,
                                   color: Colors.grey,
                                 ),
                                 overflow: TextOverflow.ellipsis),
@@ -112,24 +121,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: <Widget>[
                           Container(
                             height: 150,
-                            decoration: const BoxDecoration(
-                              image: const DecorationImage(
-                                fit: BoxFit.fill,
-                                image: const AssetImage('assets/2.jpg'),
+                            decoration: new BoxDecoration(
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: AssetImage(PopularCatImageList[idx])
                               ),
                             ),
                           ),
                           ListTile(
                             title: Text(
-                              "魔物獵人",
+                              PopularCatNameList[idx],
                               style: TextStyle(
                                 fontSize: 20,
                                 color: Colors.black,
                               ),
                             ),
-                            subtitle: Text(" 心得:還敢下來阿冰鳥?!",
+                            subtitle: Text(" ${PopularCatNameList[idx]}真可愛!!",
                                 style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 14,
                                   color: Colors.grey,
                                 ),
                                 overflow: TextOverflow.ellipsis),
