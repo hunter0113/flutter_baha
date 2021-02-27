@@ -4,4 +4,4 @@
 ．仿照巴哈姆特論壇APP外觀設計。<br/>
 ．實現Flutter常用的各類widget。<br/>
 
-<img src="https://github.com/hunter0113/flutter_baha/blob/master/video.gif" width="20%" height="20%">
+<img src="https://github.com/hunter0113/flutter_baha/blob/master/video.gif" width="30%" height="30%">
